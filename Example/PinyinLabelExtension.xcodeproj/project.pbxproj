@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		032D4C96E603C3ACDF8DA452 /* Pods-PinyinLabelExtension_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinyinLabelExtension_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PinyinLabelExtension_Tests/Pods-PinyinLabelExtension_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		360841FCC294FD798BA449F1 /* Pods_PinyinLabelExtension_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PinyinLabelExtension_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3FF827BD5B28D63AF959F917 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3FF827BD5B28D63AF959F917 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* PinyinLabelExtension_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinyinLabelExtension_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,10 +42,10 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6DA6D1F7EBAF9946948DF47D /* Pods-PinyinLabelExtension_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinyinLabelExtension_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-PinyinLabelExtension_Example/Pods-PinyinLabelExtension_Example.release.xcconfig"; sourceTree = "<group>"; };
-		7F4E9404D4B7F2538B8A1B50 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		7F4E9404D4B7F2538B8A1B50 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		8F03F307D1CCED367DC46DF9 /* Pods-PinyinLabelExtension_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinyinLabelExtension_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PinyinLabelExtension_Example/Pods-PinyinLabelExtension_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A63397DC17E5DFD998E25DD8 /* Pods-PinyinLabelExtension_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinyinLabelExtension_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PinyinLabelExtension_Tests/Pods-PinyinLabelExtension_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		D51A4C150EF3F8AD18577EE5 /* PinyinLabelExtension.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = PinyinLabelExtension.podspec; path = ../PinyinLabelExtension.podspec; sourceTree = "<group>"; };
+		D51A4C150EF3F8AD18577EE5 /* PinyinLabelExtension.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PinyinLabelExtension.podspec; path = ../PinyinLabelExtension.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F55305F786B1698C0A9352A1 /* Pods_PinyinLabelExtension_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PinyinLabelExtension_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
