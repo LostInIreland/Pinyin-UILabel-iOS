@@ -1,0 +1,16 @@
+PODS:
+  - PinyinLabelExtension (0.1.0)
+
+DEPENDENCIES:
+  - PinyinLabelExtension (from `../`)
+
+EXTERNAL SOURCES:
+  PinyinLabelExtension:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PinyinLabelExtension: 987567c298e8d196ef6ea2015400e29fccd554ea
+
+PODFILE CHECKSUM: 425c8ff27bad4172516dc5a8c8f66337734c5d7a
+
+COCOAPODS: 1.5.3

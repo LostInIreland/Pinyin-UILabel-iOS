@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'PinyinLabelExtension_Example' do
+  pod 'PinyinLabelExtension', :path => '../'
+
+  target 'PinyinLabelExtension_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
