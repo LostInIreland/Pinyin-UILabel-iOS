@@ -1,6 +1,7 @@
 # Pinyin-UILabel-iOS
 An iOS custom UILabel that can display Chinese pinyin with tone above
 
+![Screenshot](sample0.png)
 
 1. Installation
 
@@ -12,4 +13,5 @@ pod 'PinyinLabelExtension'
 
 2. Use it as UILabel at the storyboard
 
+![Screenshot](sample1.png)
 
