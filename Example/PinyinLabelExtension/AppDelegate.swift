@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  PinyinLabelExtension
 //
-//  Created by Edward Money on 01/07/2019.
-//  Copyright (c) 2019 Edward Money. All rights reserved.
+//  Created by Lost In Ireland on 01/07/2019.
+//  Copyright (c) 2019 Lost In Ireland. All rights reserved.
 //
 
 import UIKit
