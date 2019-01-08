@@ -114,7 +114,7 @@ class PinyinLabel : UILabel {
 
 extension String {
     func size(OfFont font: UIFont) -> CGSize {
-        return (self as NSString).size(withAttributes: [NSAttributedStringKey.font: font])
+        return (self as NSString).size(withAttributes: [NSAttributedString.Key.font: font])
     }
     
     subscript (i: Int) -> Character {
@@ -146,7 +146,7 @@ extension String {
 }
 extension Substring {
     func size(OfFont font: UIFont) -> CGSize {
-        return (self as NSString).size(withAttributes: [NSAttributedStringKey.font: font])
+        return (self as NSString).size(withAttributes: [NSAttributedString.Key.font: font])
     }
     
     subscript (i: Int) -> Character {
@@ -179,6 +179,6 @@ extension Substring {
 
 extension Character {
     func size(OfFont font: UIFont) -> CGSize {
-        return (String(self) as NSString).size(withAttributes: [NSAttributedStringKey.font: font])
+        return (String(self) as NSString).size(withAttributes: [NSAttributedString.Key.font: font])
     }
 }

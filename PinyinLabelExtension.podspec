@@ -9,10 +9,12 @@
 Pod::Spec.new do |s|
   s.name             = 'PinyinLabelExtension'
   s.version          = '0.1.0'
+  s.swift_version    = '4.2'
   s.summary          = 'An iOS custom UILabel that can display Chinese pinyin with tone above.'
 
   s.description      = <<-DESC
 An iOS custom UILabel that can display Chinese pinyin with tone above.
+It take 1, 2, 3, 4 as the tone value after the pinyin.
                        DESC
 
   s.homepage         = 'https://github.com/LostInIreland/Pinyin-UILabel-iOS'
@@ -21,7 +23,7 @@ An iOS custom UILabel that can display Chinese pinyin with tone above.
   s.source           = { :git => 'https://github.com/LostInIreland/Pinyin-UILabel-iOS.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
-
+  
   s.source_files = 'PinyinLabelExtension/Classes/**/*'
   
   # s.resource_bundles = {
