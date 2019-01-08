@@ -15,3 +15,8 @@ pod 'PinyinLabelExtension'
 
 ![Screenshot](sample1.png)
 
+3. You can use it in the code as noraml UILabel
+
+```
+pinyin.text = "Ni3"
+```
