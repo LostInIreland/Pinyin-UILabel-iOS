@@ -1,5 +1,5 @@
 //
-//  UILabelExtension.swift
+//  PinyinLabel.swift
 //  PinyinLabelExtension
 //
 //  Created by Lost In Ireland on 07/01/2019.
@@ -8,11 +8,11 @@
 import UIKit
 
 @IBDesignable
-class PinyinLabel : UILabel {
+public class PinyinLabel : UILabel {
     var pinyin: String = "";
     var letter: String = "";
     
-    override func drawText(in rect: CGRect) {
+    public override func drawText(in rect: CGRect) {
         if text != nil {
             pinyin = text!;
             if let rangeOfV = pinyin.range(of: "v") {
@@ -24,16 +24,10 @@ class PinyinLabel : UILabel {
             }
         }
         if !pinyin.isEmpty {
-            var y: CGFloat = 0;
             let toneNumber = pinyin.last;
             let tone = getTone(toneNumber: toneNumber);
             let stateIndex = getStateIndex(text: pinyin);
             if stateIndex != -1 {
-                // If tone is not above 'ü'
-                if pinyin[stateIndex] != "ü" {
-                    y += tone.size(OfFont: font).height / 8;
-                }
-                
                 // If tone is above 'i', replace 'i' by 'ı'
                 if pinyin[stateIndex] == "i" {
                     if let rangeOfI = pinyin.range(of: "i") {
@@ -48,7 +42,7 @@ class PinyinLabel : UILabel {
             let x = rect.origin.x
                 + pinyin[0 ..< stateIndex].size(OfFont: font).width
                 + (pinyin[stateIndex].size(OfFont: font).width - tone.size(OfFont: font).width ) / 2;
-            nsTone.draw(at: CGPoint(x: x, y: y), withAttributes: attributes);
+            nsTone.draw(at: CGPoint(x: x, y: 0), withAttributes: attributes);
         }
         text = letter;
         super.drawText(in: rect);

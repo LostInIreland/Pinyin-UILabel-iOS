@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import PinyinLabelExtension
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var pinyin: PinyinLabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        pinyin.text = "ni3"
     }
 
     override func didReceiveMemoryWarning() {
