@@ -38,10 +38,24 @@ public class PinyinLabel : UILabel {
             let nsTone = NSString(string: tone);
             let attributes = attributedText?.attributes(at: 0, effectiveRange: nil);
             
-            // FIXME: if the label text is not align left, it break
-            let x = rect.origin.x
-                + pinyin[0 ..< stateIndex].size(OfFont: font).width
-                + (pinyin[stateIndex].size(OfFont: font).width - tone.size(OfFont: font).width ) / 2;
+            var x: CGFloat = 0;
+            if textAlignment == NSTextAlignment.left ||
+                textAlignment == NSTextAlignment.natural ||
+                textAlignment == NSTextAlignment.justified {
+                x = rect.origin.x
+                    + pinyin[0 ..< stateIndex].size(OfFont: font).width
+                    + (pinyin[stateIndex].size(OfFont: font).width - tone.size(OfFont: font).width ) / 2;
+            } else if textAlignment == NSTextAlignment.right {
+                x = rect.origin.x
+                    + (rect.size.width - letter.size(OfFont: font).width)
+                    + pinyin[0 ..< stateIndex].size(OfFont: font).width
+                    + (pinyin[stateIndex].size(OfFont: font).width - tone.size(OfFont: font).width ) / 2;
+            } else if textAlignment == NSTextAlignment.center {
+                x = rect.origin.x
+                    + (rect.size.width - letter.size(OfFont: font).width) / 2
+                    + pinyin[0 ..< stateIndex].size(OfFont: font).width
+                    + (pinyin[stateIndex].size(OfFont: font).width - tone.size(OfFont: font).width ) / 2;
+            }
             nsTone.draw(at: CGPoint(x: x, y: 0), withAttributes: attributes);
         }
         text = letter;

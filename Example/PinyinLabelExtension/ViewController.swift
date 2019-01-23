@@ -15,7 +15,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        pinyin.text = "ni3"
+        pinyin.text = "hao3"
+        
     }
 
     override func didReceiveMemoryWarning() {
